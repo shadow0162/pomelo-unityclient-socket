@@ -26,8 +26,9 @@ namespace Pomelo.DotNetClient
 			this.state = ProtocolState.start;
 		}
 
-		internal void start(JsonObject user, Action<JsonObject> callback){
-			this.transporter.start();
+        internal void start(JsonObject user, Action<JsonObject> callback)
+        {
+            this.transporter.start();
 			this.handshake.request(user, callback);
 
 			this.state = ProtocolState.handshaking;
@@ -150,6 +151,10 @@ namespace Pomelo.DotNetClient
 
 			this.state = ProtocolState.closed;
 		}
-	}
+        internal void Update()
+        {
+            transporter.Update();
+        }
+    }
 }
 

@@ -40,6 +40,7 @@
   <ItemGroup />
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="src\transport\TransportQueue.cs" />
     <Compile Include="src\protobuf\Decoder.cs" />
     <Compile Include="src\protobuf\Encoder.cs" />
     <Compile Include="src\protobuf\MsgDecoder.cs" />
